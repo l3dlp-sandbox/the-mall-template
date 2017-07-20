@@ -1,0 +1,25 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/eventlistener",
+    "test/json",
+    "test/touchevents",
+    "test/css/borderradius",
+    "test/css/boxsizing",
+    "test/css/calc",
+    "test/css/flexbox",
+    "test/css/gradients",
+    "test/css/multiplebgs",
+    "test/css/opacity",
+    "test/css/overflow-scrolling",
+    "test/css/rgba",
+    "test/css/textshadow",
+    "test/css/transitions",
+    "test/css/vhunit",
+    "test/dom/dataset",
+    "test/svg/inline"
+  ]
+}

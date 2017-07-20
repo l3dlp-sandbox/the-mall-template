@@ -1,0 +1,28 @@
+.filter-menu {
+  display: inline-block;
+  .dropdown-toggle {
+    padding: $spacer-y * .5 0 $spacer-y * 1.5 0;
+    display: inline-block;
+    color: $black;
+    font-weight: bold;
+    &:hover, &:focus {
+      color: $theme-highlight-color;
+    }
+  }
+  .dropdown-menu {
+    max-width: 30rem;
+    top: 75%;
+    @include media-breakpoint-up(sm) {
+      top: 50%;
+      left: $grid-gutter-width-base / 2;
+    }
+    padding: $spacer-y * 1.5 $spacer-x * 1.5;
+  }
+}
+
+.filter-buttons {
+  a {
+    margin-right: $spacer-x * .5;
+    margin-bottom: $spacer-y * .5;
+  }
+}

@@ -1,0 +1,78 @@
+.select2-selection--single {
+  background-color: transparent;
+  border: 1px solid $hr-border-color;
+  border-radius: 0;
+  color: #222;
+  font-size: .9rem;
+  padding: $spacer-y * .5 $spacer-x * .5;
+  height: auto;
+  outline: none;
+  .select2-selection__rendered {
+    color: inherit;
+    line-height: 28px;
+  }
+
+  .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+  }
+
+  .select2-selection__placeholder {
+    color: inherit;
+  }
+
+  .select2-selection__arrow {
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1rem;
+    margin-top: -.75rem;
+    b {
+      &:before {
+        font-weight: normal;
+        font-family: "FontAwesome", sans-serif;
+        content: "\f105";
+        font-size: 1rem;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+&[dir="rtl"] {
+  .select2-selection--single {
+    .select2-selection__clear {
+      float: left;
+    }
+
+    .select2-selection__arrow {
+      left: 1px;
+      right: auto;
+    }
+  }
+}
+
+&.select2-container--disabled {
+  .select2-selection--single {
+    background-color: $gray-light;
+    cursor: default;
+
+    .select2-selection__clear {
+      display: none;
+    }
+  }
+}
+
+&.select2-container--open {
+  .select2-selection--single {
+    .select2-selection__arrow {
+      b {
+        &:before {
+          @extend .fa-rotate-90;
+        }
+      }
+    }
+  }
+}

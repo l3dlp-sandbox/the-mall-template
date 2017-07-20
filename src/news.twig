@@ -1,0 +1,71 @@
+{% extends "index.twig" %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/" title="Back to the home page">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        News
+                    </li>
+                </ol>
+            </div>
+            <div class="col-12">
+                <div class="section-divider">
+                    <span class="h3">News</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8 col-xl-9 push-xl-3 push-lg-4">
+                <article class="news-article">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="/img/news-image.png" class="img-fluid" alt="News image"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="date-box"><span class="day">07</span><span class="month">Jun</span></div>
+                            <div class="news-text">
+                                <h2><a href="#" title="Read more">Test News</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <a class="btn btn-primary float-right" href="#" title="Read more">Read more</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-lg-4 col-xl-3 pull-lg-8 pull-xl-9">
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <p class="block-title"><span>Latest posts</span></p>
+                        <ul class="list-hoverable list-unstyled">
+                            {% for i in 1..5 %}
+                                <li>
+                                    <a href="#" title="Read more">
+                                        <i class="fa fa-chevron-circle-right mr-2" aria-hidden="true"></i> Lorem Ipsum
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <p class="block-title"><span>Filter by Tags</span></p>
+                        <div class="filter-buttons">
+                            <a href="#" class="btn btn-outline-primary">Leather</a>
+                            <a href="#" class="btn btn-outline-primary">Comfort</a>
+                            <a href="#" class="btn btn-outline-primary">Black</a>
+                            <a href="#" class="btn btn-outline-primary">Yellow</a>
+                            <a href="#" class="btn btn-outline-primary">Sleep</a>
+                            <a href="#" class="btn btn-outline-primary">Stressless</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+{% endblock %}

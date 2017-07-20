@@ -1,0 +1,9 @@
+.breadcrumb {
+  margin-bottom: 0;
+  a {
+    color: $black;
+    &:hover, &:focus {
+      color: $theme-highlight-color;
+    }
+  }
+}

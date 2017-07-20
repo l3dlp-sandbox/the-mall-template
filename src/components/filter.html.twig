@@ -1,0 +1,159 @@
+<div class="dropdown mega-menu filter-menu">
+    <a class="dropdown-toggle" href="#">
+        <i class="fa fa-filter" aria-hidden="true"></i>
+        <span>Filter</span>
+    </a>
+    <div class="dropdown-menu">
+        {# TODO: Folgende Filter (jeweils immer mit Überschrift drüber in h4) -> Preis: Preiszange, Farbe: Farbkacheln, Stichpunkte: Tags, Maße (Breite, Höhe, Länge): Zange#}
+        <div class="row">
+            <div class="col-12">
+                <p class="h5 mb-2 mt-2">Price</p>
+
+                <div class="range-slider" data-range-min="0"
+                     data-range-max="5000"
+                     data-range-current-min="0"
+                     data-range-current-max="5000"
+                     data-range-target-min=".price-range-value-min"
+                     data-range-target-max=".price-range-value-max" data-unit-type="€"></div>
+
+                <div class="range-slider-controls">
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="price-min" class="sr-only">Price min</label>
+                            <input id="price-min" type="text" name="priceMin" class="form-control input-range price-range-value-min" value="0" data-read-only-suffix="€" />
+                        </div>
+
+                        <div class="col-2">
+                            <p class="form-control-static">-</p>
+                        </div>
+
+                        <div class="col-5">
+                            <label for="price-max" class="sr-only">Price max</label>
+                            <input id="price-max" type="text" name="priceMax" class="form-control input-range price-range-value-max" value="5000" data-read-only-suffix="€" />
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="h5 mb-2 mt-2">Width</p>
+
+                <div class="range-slider" data-range-min="0"
+                     data-range-max="250"
+                     data-range-current-min="0"
+                     data-range-current-max="250"
+                     data-range-target-min=".width-range-value-min"
+                     data-range-target-max=".width-range-value-max" data-unit-type="cm"></div>
+
+                <div class="range-slider-controls">
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="width-min" class="sr-only">Width min</label>
+                            <input id="width-min" type="text" name="widthMin" class="form-control width-range-value-min" value="0" data-read-only-suffix="cm" />
+                        </div>
+
+                        <div class="col-2">
+                            <p class="form-control-static">-</p>
+                        </div>
+
+                        <div class="col-5">
+                            <label for="width-max" class="sr-only">Width max</label>
+                            <input id="width-max" type="text" name="widtheMax" class="form-control width-range-value-max" value="250" data-read-only-suffix="cm" />
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="h5 mb-2 mt-2">Height</p>
+
+                <div class="range-slider" data-range-min="0"
+                     data-range-max="200"
+                     data-range-current-min="0"
+                     data-range-current-max="200"
+                     data-range-target-min=".height-range-value-min"
+                     data-range-target-max=".height-range-value-max" data-unit-type="cm"></div>
+
+                <div class="range-slider-controls">
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="height-min" class="sr-only">Height min</label>
+                            <input id="height-min" type="text" name="widthMin" class="form-control height-range-value-min" value="0" data-read-only-suffix="cm" />
+                        </div>
+
+                        <div class="col-2">
+                            <p class="form-control-static">-</p>
+                        </div>
+
+                        <div class="col-5">
+                            <label for="height-max" class="sr-only">Height max</label>
+                            <input id="height-max" type="text" name="widtheMax" class="form-control height-range-value-max" value="200" data-read-only-suffix="cm" />
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="h5 mb-2 mt-2">Length</p>
+
+                <div class="range-slider" data-range-min="0"
+                     data-range-max="200"
+                     data-range-current-min="0"
+                     data-range-current-max="200"
+                     data-range-target-min=".length-range-value-min"
+                     data-range-target-max=".length-range-value-max" data-unit-type="cm"></div>
+
+                <div class="range-slider-controls">
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="length-min" class="sr-only">Length min</label>
+                            <input id="length-min" type="text" name="widthMin" class="form-control length-range-value-min" value="0" data-read-only-suffix="cm" />
+                        </div>
+
+                        <div class="col-2">
+                            <p class="form-control-static">-</p>
+                        </div>
+
+                        <div class="col-5">
+                            <label for="length-max" class="sr-only">Length max</label>
+                            <input id="length-max" type="text" name="widtheMax" class="form-control length-range-value-max" value="200" data-read-only-suffix="cm" />
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="h5 mb-2 mt-2">Attributes</p>
+
+                <div class="filter-buttons">
+                    <a href="#" class="btn btn-outline-primary">Leather</a>
+                    <a href="#" class="btn btn-outline-primary">Comfort</a>
+                    <a href="#" class="btn btn-outline-primary">Black</a>
+                    <a href="#" class="btn btn-outline-primary">Yellow</a>
+                    <a href="#" class="btn btn-outline-primary">Sleep</a>
+                    <a href="#" class="btn btn-outline-primary">Stressless</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="btn-group btn-group-block mt-3">
+                    <a href="#" class="btn btn-primary">Apply</a>
+                    <a href="#" class="btn btn-secondary">Reset</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

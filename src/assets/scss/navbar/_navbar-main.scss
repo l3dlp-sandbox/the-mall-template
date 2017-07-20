@@ -1,0 +1,119 @@
+.navbar-main {
+  background: $gray-lightest;
+  border-bottom: 2px solid darken($theme-highlight-color, 10%);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  transition: $transition-base;
+  padding: 0 $grid-gutter-width-base / 2;
+  .navbar-brand {
+    img {
+      max-width: 120px;
+      @include media-breakpoint-up(sm) {
+        max-width: 150px;
+      }
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .navbar-brand {
+      padding: 0;
+    }
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-toggler {
+    color: $white;
+    right: 0;
+    transition: $transition-base;
+    background: $theme-highlight-color;
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    .small {
+      font-size: .5em;
+    }
+    &:hover, &:focus {
+      background: $white;
+      color: $black;
+    }
+  }
+  .navbar-nav {
+    @include media-breakpoint-down(md) {
+      margin-right: auto;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-left: auto;
+    }
+  }
+  .navbar-text {
+    color: $black;
+  }
+  .form-inline {
+    flex-flow: row;
+    @include media-breakpoint-down(sm) {
+      padding-right: 1rem;
+    }
+    .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+    }
+  }
+  .mega-menu {
+    @include media-breakpoint-down(sm) {
+      .dropdown-menu {
+        display: none;
+      }
+    }
+  }
+  .nav-item {
+    > a {
+      padding: $navbar-toggler-padding-y + 0.4rem $navbar-toggler-padding-x $navbar-toggler-padding-y - 0.4rem $navbar-toggler-padding-x;
+      font-size: $navbar-toggler-font-size;
+      color: $black;
+      transition: $transition-base;
+      display: inline-block;
+      text-align: center;
+      &:hover, &:focus {
+        color: $theme-highlight-color;
+      }
+    }
+    .fa {
+      font-size: .85em;
+      position: relative;
+      display: block;
+    }
+    span {
+      font-size: .5em;
+      display: block;
+    }
+    .basket-indicator {
+      position: absolute;
+      top: -.75rem;
+      right: 0;
+      background: $theme-highlight-color;
+      color: $white;
+      border-radius: 50%;
+      width: 1.4rem;
+      height: 1.4rem;
+      font-size: .9rem;
+      font-weight: bold;
+      padding-top: .25rem;
+    }
+  }
+  .shopping-cart-preview {
+    position: relative;
+    .dropdown-menu {
+      padding: $spacer-y $spacer-x;
+      max-width: 30rem;
+      min-width: 20rem;
+      right: 0;
+      left: initial;
+    }
+  }
+}

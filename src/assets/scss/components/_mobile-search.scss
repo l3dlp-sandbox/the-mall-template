@@ -1,0 +1,55 @@
+.mobile-header {
+  background: $gray-lightest;
+  padding: $spacer-y $spacer-x;
+}
+
+.search-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.suggestions-box {
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba($black, 0.14), 0 1px 5px 0 rgba($black, 0.12), 0 3px 1px -2px rgba($black, 0.2);
+  position: absolute;
+  z-index: 1020;
+  overflow-y: scroll;
+  padding: $spacer-y * .5 $spacer-x;
+  margin-top: $input-height + .1rem;
+  max-height: 15rem;
+  @include media-breakpoint-up(md) {
+    width: 30rem;
+    max-height: 25rem;
+    margin-top: $input-height-lg + .1rem;
+  }
+  .suggestion {
+    margin-bottom: $spacer-y;
+  }
+  .suggestion-name {
+    a {
+      text-transform: uppercase;
+      color: $black;
+      font-weight: bold;
+      font-size: .85rem;
+      transition: $transition-base;
+      &:hover, &:focus {
+        color: $theme-highlight-color;
+      }
+    }
+  }
+  mark {
+    padding: 0;
+    background: none;
+    color: $brand-primary;
+    font-weight: 600;
+  }
+  .preloader {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.search-wrapper {
+  position: relative;
+}
+

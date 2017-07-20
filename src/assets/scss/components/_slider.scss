@@ -1,0 +1,151 @@
+.owl-carousel {
+  .owl-slide {
+    position: relative;
+  }
+  .owl-nav {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    .owl-prev, .owl-next {
+      float: left;
+      color: $white;
+      display: block;
+      text-align: center;
+      font-size: 2.8rem;
+      height: 3rem;
+      padding: 0;
+      margin-top: -1.5rem;
+      transition: $transition-base;
+      opacity: 0.75;
+      background: transparent;
+      pointer-events: auto;
+      top: 50%;
+      position: absolute;
+      left: 1rem;
+      &.disabled {
+        opacity: 0;
+      }
+      &:hover, &:focus {
+        color: $white;
+        opacity: 1;
+        background: transparent;
+      }
+      i {
+        vertical-align: top;
+      }
+    }
+    .owl-next {
+      left: initial;
+      right: 1rem;
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    .owl-dot {
+      span {
+        background: $black;
+        width: .75rem;
+        height: .75rem;
+        transition: background .2s ease-in-out;
+        display: block;
+        float: left;
+      }
+      &.active, &:hover, &:focus {
+        span {
+          background: $white;
+        }
+      }
+    }
+  }
+}
+
+.product-carousel {
+  .owl-dots {
+    bottom: 5%;
+  }
+}
+
+.fullscreen-carousel {
+  border-bottom: 3px solid darken($theme-highlight-color, 10%);
+  .owl-slide {
+    max-height: 450px;
+    overflow: hidden;
+  }
+  .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+  .slide-caption {
+    background: rgba($black, .4);
+    margin-top: $spacer-y;
+    padding: $spacer;
+    @include media-breakpoint-up(lg) {
+      margin-top: $spacer-y * 2;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: $spacer-y * 3;
+    }
+    .caption-description, .caption-title{
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 300;
+      color: $white;
+      @include media-breakpoint-up(md) {
+        font-size: 1.1rem;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 1.3rem;
+      }
+    }
+    .caption-title {
+      font-size: 1.4rem;
+      @include media-breakpoint-up(md) {
+        font-size: 2rem;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 2.6rem;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 3rem;
+      }
+    }
+    .btn-border {
+      border: 2px solid #fff;
+      padding: $spacer-y * .5 $spacer-x * 1.5;
+      font-size: .8rem;
+      font-weight: bold;
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+      color: $white;
+      background: transparent;
+      @include media-breakpoint-up(lg) {
+        padding: $spacer-y $spacer-x * 2;
+        font-size: .95rem;
+      }
+      &:hover, &:focus {
+        background: $white;
+        color: $black;
+      }
+    }
+  }
+  .owl-nav {
+    .owl-next, .owl-prev {
+      font-size: 3.2rem;
+    }
+  }
+}

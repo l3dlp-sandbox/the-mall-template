@@ -1,0 +1,73 @@
+{% extends "index.twig" %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/" title="Back to the home page">Home</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    Cart
+                </li>
+            </ol>
+        </div>
+        <div class="col-12">
+            <div class="section-divider">
+                <span class="h3">Your Cart</span>
+            </div>
+        </div>
+    </div>
+
+    {% include "components/cart-content.twig" %}
+
+    <div class="row">
+        <div class="col-12 col-sm-8 offset-sm-4 col-lg-4 offset-lg-8">
+            <div class="box">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-0">Shipping:</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-0 text-right">0,00 €</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-0">Voucher:</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-0 text-right">-0,00 €</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-0">19% taxes included:</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-0 text-right">47,31 €</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-0"><b>Total:</b></p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-0 text-right"><b>249,00 €</b></p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="btn-group btn-group-block">
+                        <a href="/index.html" class="btn btn-secondary">Keep shopping</a>
+                        <a href="/checkout.html" class="btn btn-primary">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

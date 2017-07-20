@@ -1,0 +1,13 @@
+.card {
+  .card-icon {
+    text-align: center;
+    padding: $spacer-y 0 0  ;
+    i {
+      padding: $spacer;
+      background: $gray-lightest;
+      color: $theme-highlight-color;
+      border-radius: 50%;
+      font-size: 3rem;
+    }
+  }
+}

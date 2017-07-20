@@ -1,0 +1,274 @@
+{% extends "index.twig" %}
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/" title="Back to the home page">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/product-category.html" title="Back to the home page">Amazing Category</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        An awesome product
+                    </li>
+                </ol>
+            </div>
+            <div class="col-12">
+                <div class="section-divider">
+                    <span class="h3">An awesome product</span>
+                    <small>Itemnumber: 123456789</small>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="box">
+                    <div class="box-header">
+                        <div class="star-rating float-left">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="actions float-right">
+                            <a href="#" title="Add to wishlist  ">
+                                <i class="fa fa-heart-o"></i>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="box-body">
+                        <div class="owl-carousel owl-theme product-carousel">
+                            <div class="owl-slide">
+                                <img src="/img/awesome-product.jpg" alt="A super awesome product" class="img-fluid" />
+                            </div>
+                            <div class="owl-slide">
+                                <img src="/img/awesome-product-2.jpg" alt="A super awesome product" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-footer hidden-lg-up">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 push-sm-6">
+                                <p class="price text-right">
+                                    <del class="small">499,99 €</del>
+                                    <span class="amount">&nbsp;only 249,00 €</span>
+                                </p>
+                                <span class="float-right badge badge-pill badge-primary">Save 50%</span>
+                            </div>
+                            <div class="col-12 col-sm-6 pull-sm-6">
+                                <p>Share via:</p>
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#" title="Get to our Facebook Page">
+                                            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Facebook Page</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Get to our Twitter page">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Twitter Page</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Get to our Pinterest page">
+                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Pinterest Page</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Get to our Instagram page">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Instagram Page</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-footer hidden-lg-up">
+                        <div class="row">
+                            <div class="col-12">
+                                <label class="control-label" for="quantity">
+                                    <b>Select<br>amount:</b>
+                                </label>
+                                <div class="counter float-right">
+                                    <button class="btn btn-primary" data-action="decrement-counter"><i
+                                                class="fa fa-minus" aria-hidden="true"></i><span class="sr-only">Reduce amount</span>
+                                    </button>
+                                    <input id="quantity" name="quantity" type="text"
+                                           class="form-control form-control-lg quantity-input" value="1" data-max-quantity="99">
+                                    <button class="btn btn-primary" data-action="increment-counter"><i
+                                                class="fa fa-plus" aria-hidden="true"></i><span class="sr-only">Increase amount</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="btn-group btn-group-lg btn-group-block" role="group" aria-label="Product Actions">
+                                    <a href="#" class="btn btn-secondary" role="button"><span class="hidden-xs-down">Add to Wishlist</span>&nbsp;<i class="fa fa-heart align-text-bottom" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn btn-primary" role="button"><span class="hidden-xs-down">Add to Cart</span>&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="box hidden-md-down">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="price text-right">
+                                    <del class="small">499,99 €</del>
+                                    <span class="amount">&nbsp;only 249,00 €</span>
+                                </p>
+                                <span class="float-right badge badge-pill badge-primary">Save 50%</span>
+                            </div>
+                            <div class="col-12">
+                                <p>Share via:</p>
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#" title="Get to our Facebook Page">
+                                            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Facebook Page</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Get to our Twitter page">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Twitter Page</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Get to our Pinterest page">
+                                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Pinterest Page</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Get to our Instagram page">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            <span class="sr-only">Our Instagram Page</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <div class="row">
+                            <div class="col-12">
+                                <label class="control-label" for="quantity">
+                                    <b>Select<br>amount:</b>
+                                </label>
+                                <div class="counter float-right">
+                                    <button class="btn btn-primary" data-action="decrement-counter"><i
+                                                class="fa fa-minus" aria-hidden="true"></i><span class="sr-only">Reduce amount</span>
+                                    </button>
+                                    <input id="quantity" name="quantity" type="text"
+                                           class="form-control form-control-lg quantity-input" value="1" data-max-quantity="99">
+                                    <button class="btn btn-primary" data-action="increment-counter"><i
+                                                class="fa fa-plus" aria-hidden="true"></i><span class="sr-only">Increase amount</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="btn btn-primary btn-block" role="button"><span class="hidden-xs-down">Add to Cart</span>&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a href="#" class="btn btn-secondary btn-block" role="button"><span class="hidden-xs-down">Add to Wishlist</span>&nbsp;<i class="fa fa-heart align-text-bottom" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-body">
+                        <p class="mb-0">Service: 48h delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="box">
+                    <div class="box-body">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#details" role="tab" aria-controls="details">Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews">Reviews</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="details" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8">
+                                        <h3 class="h5">Product description</h3>
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <h3 class="h5">Details</h3>
+                                        <p>
+                                            <b>Color</b>: Black <br />
+                                            <b>Model</b>: Super awesome<br />
+                                            <b>Material</b>: Leather<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="reviews" role="tabpanel">
+                                {% for in in 1..2 %}
+                                <div class="rating-widget">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="star-rating float-right">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="media">
+                                                <div class="rating-user d-flex flex-column">
+                                                    <img class="img-fluid rounded-circle" alt="Awesome user" src="https://placehold.it/75x75" />
+                                                    <p class="mb-0">John Doe</p>
+                                                    <span class="small text-gray-dark">21.06.2017</span>
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="rating-details">
+                                                        <h3 class="rating-title">Quite an awesome product</h3>
+                                                        <p class="rating-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h4 mb-4">Related products:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="owl-carousel owl-theme product-box-carousel">
+                    {% for i in 1..8 %}
+                        <div class="owl-slide">
+                            {% include "components/product-box.html.twig" %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,53 @@
+.news-article{
+  line-height: 1.7rem;
+  position: relative;
+  padding-bottom: $spacer-y * 2;
+  img {
+    border-bottom: 4px solid $theme-highlight-color;
+    width: 100%;
+  }
+  .date-box {
+    width: 4rem;
+    position: absolute;
+    text-align: center;
+    .day {
+      display: block;
+      text-align: center;
+      width: 4rem;
+      z-index: 100;
+      color: $white;
+      font-weight: 600;
+      font-size: 2.5rem;
+      padding: $spacer-y * 2 0 $spacer-y 0;
+      background: $theme-highlight-color;
+    }
+    .month {
+      display: block;
+      color: $black;
+      text-align: center;
+      width: 4rem;
+      z-index: 100;
+      font-weight: 600;
+      letter-spacing: 1rem;
+      padding: $spacer-y * .5 0;
+      border-bottom: solid 4px $black;
+      font-size: .9rem;
+      text-transform: uppercase;
+    }
+  }
+  .news-text {
+    padding-left: 5rem;
+    margin-bottom: $spacer-y;
+    h2 {
+      color: $black;
+      letter-spacing: normal;
+      font-size: 1.75rem;
+      text-transform: none;
+      margin-top: $spacer-y;
+      display: block;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

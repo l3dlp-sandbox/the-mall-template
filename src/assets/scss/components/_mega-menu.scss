@@ -1,0 +1,29 @@
+.mega-menu{
+  position: static;
+  .dropdown-menu {
+    left: 0;
+    right: 0;
+    margin: 0;
+    top: 95%;
+    padding: 0 $grid-gutter-width-base / 2;
+  }
+}
+
+.category-container {
+  padding: $spacer-y 0;
+  a {
+    font-size: .9rem;
+    color: $black;
+    text-decoration: none;
+    display: block;
+    padding: $spacer-y * .25 $spacer-x * .25;
+    &:hover, &:focus {
+      color: $white;
+      background: $theme-highlight-color;
+    }
+  }
+  .h4 {
+    font-size: 1.25rem;
+    margin-bottom: $spacer-y * .75;
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Awesome product",
+    "image": "/img/awesome-product.jpg"
+  },
+  {
+    "name": "Awesome product 2",
+    "image": "/img/awesome-product-2.jpg"
+  },
+  {
+    "name": "Awesome product 3",
+    "image": "http://placehold.it/90x60"
+  },
+  {
+    "name": "Awesome product 4",
+    "image": "http://placehold.it/90x60"
+  },
+  {
+    "name": "Awesome product 5",
+    "image": "http://placehold.it/90x60"
+  },
+  {
+    "name": "Awesome product 6",
+    "image": "http://placehold.it/90x60"
+  },
+  {
+    "name": "Awesome product 7",
+    "image": "http://placehold.it/90x60"
+  },
+  {
+    "name": "Awesome product 8",
+    "image": "http://placehold.it/90x60"
+  },
+  {
+    "name": "Awesome product 9",
+    "image": "http://placehold.it/90x60"
+  },
+  {
+    "name": "Awesome product 10",
+    "image": "http://placehold.it/90x60"
+  }
+]

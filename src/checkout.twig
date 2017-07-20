@@ -1,0 +1,377 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!--[if lt IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script src="/js/libs-header.js"></script>
+    <![endif]-->
+    <title>{{ title }}</title>
+    <link rel="stylesheet" media="screen, projection" href="/css/style.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png"/>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light navbar-top">
+        <div class="navbar-nav mx-auto">
+            <span class="nav-item text-white h4 mb-0">Your Order (1 Item)</span>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="step-navigation">
+                    <ul>
+                        <li id="address" class="active">
+                            <div class="indicator"><i class="fa fa-address-card" aria-hidden="true"></i><span
+                                        class="hidden-sm-down"> Address</span></div>
+                        </li>
+                        <li id="payment">
+                            <div class="indicator"><i class="fa fa-credit-card" aria-hidden="true"></i><span
+                                        class="hidden-sm-down"> Payment</span></div>
+                        </li>
+                        <li id="overview">
+                            <div class="indicator"><i class="fa fa-list-alt" aria-hidden="true"></i><span
+                                        class="hidden-sm-down"> Overview</span></div>
+                        </li>
+                        <li id="successful">
+                            <div class="indicator"><i class="fa fa-check" aria-hidden="true"></i><span
+                                        class="hidden-sm-down"> Done</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row hidden-lg-up">
+            <div class="col-12">
+                <p class="h3 current-checkout-step text-uppercase text-center">Address</p>
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="tab-content">
+                    <div id="address-tab" class="tab-pane fade show active p-3">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <span class="box-title">Got an account? Login.</span>
+                                    </div>
+                                    <div class="box-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="e-mail" class="col-12 col-form-label">E-Mail</label>
+                                                <div class="col-12">
+                                                    <input id="e-mail" type="text" class="form-control" placeholder="Please enter your e-mail address" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="password" class="col-12 col-form-label">Password</label>
+                                                <div class="col-12">
+                                                    <input id="password" type="password" class="form-control" placeholder="Please enter your password" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"> Remember me
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Login</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <p><a href="#">No account? Register here</a> or did you <a href="#">forgot your password?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-8">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <span class="box-title">Guest checkout</span>
+                                    </div>
+                                    <div class="box-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group row">
+                                                        <label for="surname" class="col-12 col-form-label">Salutation</label>
+                                                        <div class="col-12 col-sm-4">
+                                                            <select id="salutation" class="form-control">
+                                                                <option selected>Mr.</option>
+                                                                <option>Mrs.</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group row">
+                                                        <label for="surname" class="col-12 col-form-label">Firstname</label>
+                                                        <div class="col-12">
+                                                            <input id="surname" type="text" class="form-control" placeholder="Please enter your firstname" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="form-group row">
+                                                        <label for="lastname" class="col-12 col-form-label">Lastname</label>
+                                                        <div class="col-12">
+                                                            <input id="lastname" type="text" class="form-control" placeholder="Please enter your lastname" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12 col-sm-8 col-md-9 col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="street" class="col-12 col-form-label">Street</label>
+                                                        <div class="col-12">
+                                                            <input id="street" type="text" class="form-control" placeholder="Please enter your street" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-3 col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="housenumber" class="col-12 col-form-label">Housenumber</label>
+                                                        <div class="col-12">
+                                                            <input id="housenumber" type="text" class="form-control" placeholder="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12 col-sm-8 col-md-9 col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="city" class="col-12 col-form-label">City</label>
+                                                        <div class="col-12">
+                                                            <input id="city" type="text" class="form-control" placeholder="Please enter your city" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-3 col-lg-6">
+                                                    <div class="form-group row">
+                                                        <label for="postalcode" class="col-12 col-form-label">Postalcode</label>
+                                                        <div class="col-12">
+                                                            <input id="postalcode" type="text" class="form-control" placeholder="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-12">
+                                                    <a data-toggle="tab" href="#payment-tab" id="address-next-btn" class="btn btn-primary float-right">Next step</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="payment-tab" class="tab-pane fade p-3">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <span class="box-title">PayPal</span>
+                                    </div>
+                                    <div class="box-body text-center">
+                                        <img class="img-fluid pt-3 pb-3" src="/img/paypal-logo.png" alt="PayPal Logo" />
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="paymentOption" value="option1" checked="" />
+                                                Select PayPal as payment provider
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <span class="box-title">PayPal</span>
+                                    </div>
+                                    <div class="box-body text-center">
+                                        <img class="img-fluid mastercard-logo pt-3 pb-3" src="/img/mastercard-logo.png" alt="MasterCard Logo" />
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="paymentOption" value="option1" />
+                                                Select MasterCard as payment provider
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a data-toggle="tab" href="#address-tab" id="payment-prev-btn" class="btn btn-primary">Previous step</a>
+                            </div>
+                            <div class="col-6">
+                                <a data-toggle="tab" href="#overview-tab" id="payment-next-btn" class="btn btn-primary float-right">Next step</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="overview-tab" class="tab-pane fade p-3">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="box box-cart-article">
+                                    <div class="box-header">
+                                        <div class="row">
+                                            <div class="col-md-5 col-12">
+                                                <span class="box-title">Article 1: Awesome product</span>
+                                            </div>
+                                            <div class="col-md-3 hidden-md-down">
+                                                <span class="box-title">Delivery</span>
+                                            </div>
+                                            <div class="col-md-2 hidden-md-down text-right"><span class="box-title">Price</span></div>
+                                            <div class="col-md-2 hidden-md-down text-right"><span class="box-title">Total</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-4">
+                                                <a title="" href="/product-detail.html"><img alt="" class="img-fluid" src="/img/awesome-product.jpg"></a>
+                                            </div>
+                                            <div class="col-lg-3 col-8">
+                                                <p><b>Awesome product</b></p>
+                                                <p>
+                                                    Measurements: 240x50x140 cm <br>
+                                                    Color: Black<br>
+                                                    Material: Leather<br>
+                                                    Article number: 123456789
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-3 col-12 col-sm-8 offset-sm-4 offset-lg-0">
+                                                <p class="float-right float-lg-none"><i class="fa fa-check text-primary"></i> 4 Weeks delivery time</p>
+                                            </div>
+                                            <div class="col-lg-2 col-12">
+                                                <p class="text-right"><span class="hidden-lg-up">Price:</span> 249,00 €</p>
+                                            </div>
+                                            <div class="col-lg-2 col-12">
+                                                <p class="text-right"><span class="hidden-lg-up"><b>Total:</b></span> <b>249,00 €</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-8 offset-sm-4 col-lg-4 offset-lg-8">
+                                <div class="box">
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="mb-0">Shipping:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="mb-0 text-right">0,00 €</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="mb-0">Voucher:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="mb-0 text-right">-0,00 €</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="mb-0">19% taxes included:</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="mb-0 text-right">47,31 €</p>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="mb-0"><b>Total:</b></p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="mb-0 text-right"><b>249,00 €</b></p>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="clearfix">
+                                            <a href="#" class="btn btn-primary float-right">Pay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a data-toggle="tab" href="#address-tab" id="overview-prev-btn" class="btn btn-primary">Previous step</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="/" title="Back to the shop" class="btn btn-border btn-secondary"><i class="fa fa-chevron-left" aria-hidden="true"></i> Keep shopping</a>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/js/libs-footer.js"></script>
+<script src="/js/compiled.js"></script>
+<script>
+    var checkoutStatusBar = $('.step-navigation');
+    function toggleCheckoutStatus(target, previous) {
+        checkoutStatusBar.find('.active').removeClass('active');
+        previous.addClass('done');
+        target.addClass('active');
+        $('.current-checkout-step').text(target.text());
+        if (target.next().hasClass('done')) {
+            target.next().removeClass('done');
+        }
+        $('html, body').animate({
+            'scrollTop':  target.offset().top
+        }, 500);
+    }
+
+    $('#payment-prev-btn').click(function (e) {
+        $(this).removeClass('active');
+        toggleCheckoutStatus($('#address'), $('#payment'));
+    });
+
+    $('#address-next-btn').click(function (e) {
+        $(this).removeClass('active');
+        toggleCheckoutStatus($('#payment'), $('#address'));
+    });
+
+    $('#overview-prev-btn').click(function (e) {
+        $(this).removeClass('active');
+        toggleCheckoutStatus($('#payment'), $('#overview'));
+    });
+
+    $('#payment-next-btn').click(function (e) {
+        $(this).removeClass('active');
+        toggleCheckoutStatus($('#overview'), $('#payment'));
+    });
+</script>
+</body>
+</html>
+{% endspaceless %}

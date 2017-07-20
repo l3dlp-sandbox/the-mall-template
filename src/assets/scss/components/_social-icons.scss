@@ -1,0 +1,28 @@
+.social-icons {
+  margin: 0 0 $spacer-y * .75;
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    & + li {
+      margin-left: $spacer-x * .25;
+    }
+  }
+  a {
+    display: block;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: $spacer * .5;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    background: darken($theme-highlight-color, 10%);
+    transition: background .3s ease-in-out;
+    &:hover, &:focus {
+      background: lighten($theme-highlight-color, 5%);
+    }
+    i {
+      vertical-align: text-top;
+    }
+  }
+}

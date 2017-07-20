@@ -1,0 +1,15 @@
+.teaser-box {
+  position: relative;
+  margin: $spacer-y 0;
+  overflow: hidden;
+  img {
+    transform: scale(1.0);
+    transition: $transition-base;
+}
+  &:hover, &:focus {
+    img {
+      transform: scale(1.25);
+    }
+  }
+}
+

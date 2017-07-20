@@ -1,0 +1,64 @@
+.step-navigation {
+  margin-bottom: $spacer-y;
+  ul {
+    margin: 0;
+    padding: $spacer-y 0;
+    border-bottom: 2px solid $hr-border-color;
+    li {
+      list-style: none;
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+      position: relative;
+      .indicator {
+        border: 2px solid $hr-border-color;
+        padding: $spacer * .75;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        background: transparent;
+        transition: $transition-base;
+        position: relative;
+        @include media-breakpoint-up(md) {
+          border-radius: 0;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          border-left: 2px solid $hr-border-color;
+          top: 105%;
+          left: 47.5%;
+          width: 100%;
+          height: 1.05rem;
+        }
+      }
+      &:after {
+        position: absolute;
+        border-bottom: 2px solid $brand-primary;
+        content: "";
+        top: 130%;
+        width: 0;
+        height: 0;
+        left: 0;
+      }
+      &.done {
+        &:after {
+          width: 100%;
+        }
+      }
+      &.active {
+        .indicator {
+          background: $brand-primary;
+          color: #fff;
+          border-color: $brand-primary;
+          &:after {
+            border-color: $brand-primary;
+          }
+        }
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

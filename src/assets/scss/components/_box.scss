@@ -1,0 +1,68 @@
+.box {
+  border: 1px solid $hr-border-color;
+  margin-bottom: $spacer-y * 1.5;
+  .box-header {
+    padding: $spacer;
+    margin-bottom: $spacer-x;
+    border-bottom: 1px solid $hr-border-color;
+  }
+  .box-title {
+    display: inline-block;
+    font-weight: bold;
+  }
+  .box-body {
+    padding: $spacer;
+  }
+  .box-footer {
+    border-top: 1px solid $hr-border-color;
+    padding: $spacer;
+  }
+  .star-rating {
+    .fa {
+      font-size: 1.25rem;
+      color: $black;
+    }
+    .fa-star, .fa-star-half-o{
+      color: $theme-highlight-color;
+    }
+  }
+  .actions {
+    .fa {
+      font-size: 2.5rem;
+    }
+    .fa-heart-o {
+      &.active, &:hover, &:focus {
+        &:before {
+          content: "\f004";
+          color: $theme-highlight-color;
+        }
+      }
+    }
+  }
+  .price {
+    .amount {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+  .nav-tabs {
+    border-bottom: none;
+    .nav-item + .nav-item {
+      margin-left: $spacer-x;
+    }
+    .nav-link {
+      border-bottom: 3px solid transparent;
+      color: $black;
+      &.active {
+        border: none;
+        border-bottom: 3px solid $theme-highlight-color;
+      }
+    }
+  }
+  .tab-content {
+    padding: $spacer-y * 1.5 0;
+  }
+  .mastercard-logo {
+    max-height: 75px;
+  }
+}

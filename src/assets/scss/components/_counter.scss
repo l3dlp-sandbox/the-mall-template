@@ -1,0 +1,15 @@
+.counter {
+  margin-bottom: $spacer-y * 2;
+  .btn {
+    display: inline-block;
+    padding: $spacer-y * .5 $spacer-x;
+  }
+  .form-control {
+    margin: 0 $spacer-x * .75;
+    display: inline-block;
+    border: 2px solid #e5e5e5;
+    width: 4rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

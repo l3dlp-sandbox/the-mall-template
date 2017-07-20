@@ -1,0 +1,10 @@
+.btn-theme {
+  @include button-variant(#fff, darken($theme-highlight-color, 5%), darken($theme-highlight-color, 10%));
+}
+
+.btn-group-block {
+  width: 100%;
+  .btn {
+    width: 50%;
+  }
+}

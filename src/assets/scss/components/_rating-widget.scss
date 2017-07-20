@@ -1,0 +1,17 @@
+.rating-widget {
+  .rating-user {
+    float: left;
+    text-align: center;
+    img {
+      margin-bottom: $spacer-y;
+    }
+  }
+  .rating-details {
+    margin-left: $spacer-x * 1.5;
+  }
+  .rating-title {
+    font-size: 1.25rem;
+  }
+  border-bottom: 1px solid $hr-border-color;
+  margin-bottom: $spacer-x;
+}

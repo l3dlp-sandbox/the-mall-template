@@ -1,0 +1,67 @@
+.box-product {
+  text-align: center;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba($black, 0.14), 0 1px 5px 0 rgba($black, 0.12), 0 3px 1px -2px rgba($black, 0.2);
+  border-bottom: 3px solid transparent;
+  transition: $transition-base;
+  &:hover, &:focus {
+    border-bottom: 3px solid $theme-highlight-color;
+  }
+  .product-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: $spacer-y;
+    border-bottom: 2px solid darken($theme-highlight-color, 10%);
+    img {
+      transform: scale(1);
+      transition: .3s ease-in-out;
+    }
+    &:hover, &:focus {
+      img {
+        transform: scale(1.25);
+      }
+    }
+  }
+  .labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    padding: $spacer;
+    font-size: 1.25rem;
+  }
+  .box-body {
+    padding: 0;
+    padding-bottom: $spacer-y;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: $black;
+    &:hover, &:focus {
+      color: $theme-highlight-color;
+    }
+  }
+  .with-overlay {
+    .overlay {
+      opacity: 1;
+      a {
+        display: inline-block;
+      }
+      .icon {
+        opacity: 0;
+        transition: $transition-base;
+        font-size: 1.75rem;
+        padding-top: $spacer-y * .75;
+      }
+      &:hover, &:focus {
+        background: transparent;
+        .icon {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

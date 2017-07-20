@@ -1,0 +1,23 @@
+.navbar-top {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: $theme-highlight-color;
+  border-bottom: 3px solid darken($theme-highlight-color, 10%);
+  overflow: hidden;
+  .navbar-nav {
+    flex-direction: row;
+    .nav-link {
+      color: rgba($white, 0.75);
+      padding-right: .5rem;
+      padding-left: .5rem;
+      transition: color .2s ease-in-out;
+      &.active, &:hover, &:focus {
+        color: rgba($white, 1);
+      }
+      &.disabled {
+        color: rgba($white, 0.3);
+      }
+    }
+  }
+}

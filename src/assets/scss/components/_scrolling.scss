@@ -1,0 +1,49 @@
+.scrolling-horizontal-wrapper {
+  position: relative;
+  overflow: hidden;
+  .scrolling-horizontal {
+    position: static;
+    &.ps-active-x {
+      pointer-events: none;
+      &:before, &:after {
+        visibility: hidden;
+        opacity: 0;
+        z-index: 10;
+        position: absolute;
+        transition: $transition-base;
+        background: rgba(darken($theme-highlight-color, 10%), .65);
+        color: $white;
+        text-align: center;
+        width: 20px;
+        height: 100%;
+        left: 0;
+        font-family: "FontAwesome", sans-serif;
+        content: "\f104";
+        display: block;
+        font-size: 1.5rem;
+        padding-top: 10px;
+        pointer-events: auto;
+      }
+      &:after {
+        content: "\f105";
+        right: 0;
+        left: initial;
+      }
+      &.scrolling-left-active {
+        &:before {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      &.scrolling-right-active {
+        &:after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    .overflow-scroll-tabs {
+      pointer-events: auto;
+    }
+  }
+}

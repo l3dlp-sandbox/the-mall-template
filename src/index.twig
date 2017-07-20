@@ -1,0 +1,376 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!--[if lt IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script src="/js/libs-header.js"></script>
+    <![endif]-->
+    <title>{{ title }}</title>
+    <link rel="stylesheet" media="screen, projection" href="/css/style.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png"/>
+</head>
+<body>
+<header>
+    <div class="scrolling-horizontal-wrapper">
+        <nav class="navbar navbar-light navbar-top scrolling-horizontal">
+            <div class="navbar-nav ml-auto overflow-scroll-tabs">
+                <a class="nav-item nav-link" href="/">Home</a>
+                <a class="nav-item nav-link" href="/news.html">News</a>
+                <a class="nav-item nav-link" href="/contact.html">Contact</a>
+                <a class="nav-item nav-link" href="/product-category.html">Sofas</a>
+                <a class="nav-item nav-link" href="/product-category.html">Tables</a>
+                <a class="nav-item nav-link" href="/product-category.html">Couches</a>
+            </div>
+        </nav>
+    </div>
+    <nav class="navbar navbar-light navbar-main navbar-toggleable">
+        <button data-target="#menu-drilldown-wrapper" id="menu-drilldown-toggle" class="navbar-toggler navbar-toggler-right" type="button">
+            <span class="d-block"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span class="d-block small">Menu</span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="/img/the-mall-logo.png" class="img-fluid" alt="The Mall - Ecommerce Template" /></a>
+        <form class="form-inline hidden-sm-down">
+            <input type="text" placeholder="Search..." class="ajax-search form-control form-control-lg" />
+            <button type="submit" class="btn btn-theme btn-lg"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></button>
+        </form>
+        <ul class="navbar-nav">
+            <li href="#" class="nav-item dropdown mega-menu hidden-xs-down">
+                <a href="#">
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    <span>Categories</span>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="row">
+                        <div class="col-md-9 col-xl-8">
+                            <div class="row">
+                                {% for i in 1..6 %}
+                                <div class="col-md-4">
+                                    <div class="category-container">
+                                        <a href="/product-category.html" class="h4">Living Room</a>
+                                        <ul class="list-unstyled">
+                                            <li><a href="/product-category.html">Sofas</a></li>
+                                            <li><a href="/product-category.html">Couches</a></li>
+                                            <li><a href="/product-category.html">Tables</a></li>
+                                            <li><a href="/product-category.html">Sofas</a></li>
+                                            <li><a href="/product-category.html">Couches</a></li>
+                                            <li><a href="/product-category.html">Tables</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xl-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="#">
+                                        <div class="teaser-box with-overlay">
+                                            <img src="/img/teaser-1.jpeg" class="img-fluid" alt="Kitchen teaser" />
+                                            <div class="overlay">
+                                                <div class="icon">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="teaser-box with-overlay">
+                                        <img src="/img/teaser-2.jpeg" class="img-fluid" alt="Kitchen teaser" />
+                                        <div class="overlay">
+                                            <div class="icon">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li href="#" class="nav-item hidden-xs-down">
+                <a href="#" role="button" data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Account</span>
+                </a>
+            </li>
+            <li href="#" class="nav-item dropdown mega-menu shopping-cart-preview">
+                <a href="/cart.html">
+                    <i class="fa fa-shopping-basket" aria-hidden="true">
+                        <span class="basket-indicator">1</span>
+                    </i>
+                    <span>Basket</span>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img-fluid d-flex flex-column" alt="Awesome product" src="/img/awesome-product.jpg" />
+                        </div>
+                        <div class="col-8">
+                            <p class="h5 text-right">Awesome product</p>
+                            <p class="text-right"><b>249,00 €</b></p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-0"><b>Total:</b></p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-0 text-primary text-right"><b>249,00 €</b></p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="/cart.html" class="btn btn-primary btn-block">Shopping basket</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <ul id="menu-drilldown" class="hidden list-group list-group list-group list-group">
+        <li class="list-group-item">
+            <a href="#">Test</a>
+            <ul>
+                <li class="list-group-item">
+                    <a href="#">Test 2 nested</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="mobile-header hidden-md-up">
+        <div class="row">
+            <div class="col-12">
+                <div class="mobile-search mb-3 mb-sm-0">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="ajax-search form-control" placeholder="Search..." />
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 hidden-sm-up">
+                <a href="#" data-toggle="modal" data-target="#loginModal" class="btn btn-primary btn-block">My Account</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    {% block body %}
+        <div class="fullscreen-carousel owl-carousel owl-theme mb-5">
+            {% for i in 1..5 %}
+            <div class="owl-slide">
+                <img src="/img/slide-4.jpeg" class="img-fluid" alt="Slide 1" />
+                <div class="caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="slide-caption">
+                                    <p class="caption-description">A wonderful caption description</p>
+                                    <p class="caption-title">A Magnificent Headline</p>
+                                    <a class="btn btn-border" href="/">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="block-divider">
+            <h1 class="h3 text-uppercase">Our topseller</h1>
+            <div class="divider" aria-hidden="true"><span><i></i></span></div>
+        </div>
+        <div class="container-fluid mb-5">
+            <div class="row">
+                {% for i in 1..4 %}
+                    <div class="col-12 col-sm-6 col-md-3">
+                        {% include "components/product-box.html.twig" %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="block-divider">
+            <h1 class="h3 text-uppercase">Our services</h1>
+            <div class="divider" aria-hidden="true"><span><i></i></span></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                <div class="card-deck mb-5">
+                    <div class="card text-center">
+                        <div class="card-icon">
+                            <i class="fa fa-truck" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">Fast delivery</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">
+                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">Free assembly</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">Cheap</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-divider">
+            <h1 class="h3 text-uppercase">Our latest products</h1>
+            <div class="divider" aria-hidden="true"><span><i></i></span></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme product-box-carousel mb-5">
+                        {% for i in 1..8 %}
+                            <div class="owl-slide">
+                                {% include "components/product-box.html.twig" %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+</main>
+<footer class="footer-main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 push-md-4">
+                <div class="footer-widget">
+                    <h3 class="h5">Service</h3>
+                    <ul class="list-unstyled list-two-columns">
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Bonus Card</a></li>
+                        <li><a href="#">Free Vouchers</a></li>
+                        <li><a href="#">Route planner</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Fashion tips</a></li>
+                        <li><a href="#">Room planner</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 push-md-4">
+                <div class="footer-widget">
+                    <h3 class="h5">Information</h3>
+                    <ul class="list-unstyled list-two-columns">
+                        {% for i in 1..8 %}
+                            <li><a href="#">Some Information</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 pull-md-8">
+                <h3 class="h5 mt-3 mt-md-0">About this company</h3>
+                <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" title="Get to our Facebook Page">
+                            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Our Facebook Page</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Get to our Twitter page">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Our Twitter Page</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Get to our Pinterest page">
+                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                            <span class="sr-only">Our Pinterest Page</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Get to our Instagram page">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Our Instagram Page</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="divider-white" />
+                <p class="small">&copy; Copyright by Your Company {{ 'now'|date('Y') }}</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="e-mail" class="col-12 col-form-label">E-Mail</label>
+                        <div class="col-12">
+                            <input id="e-mail" type="text" class="form-control" placeholder="Please enter your e-mail address" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-12 col-form-label">Password</label>
+                        <div class="col-12">
+                            <input id="password" type="password" class="form-control" placeholder="Please enter your password" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p><a href="#">No account? Register here</a> or did you <a href="#">forgot your password?</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/libs-footer.js"></script>
+<script src="/js/compiled.js"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>
+{% endspaceless %}

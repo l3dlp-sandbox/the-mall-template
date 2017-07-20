@@ -1,0 +1,39 @@
+.footer-main {
+  margin-top: 2rem;
+  background: $theme-highlight-color;
+  border-top: 5px solid darken($theme-highlight-color, 15%);
+  box-shadow: 0 0.1rem 0.1rem 0 rgba($black, 0.12);
+  padding: 1rem 0 2.5rem 0;
+  @include media-breakpoint-up(md) {
+    padding-top: 4rem;
+  }
+  color: #fff;
+}
+
+.footer-widget {
+  border-bottom: 1px solid $white;
+  padding: $spacer-y 0;
+  @include media-breakpoint-up(md) {
+    border-bottom: none;
+    padding: 0;
+  }
+  a {
+    color: rgba($white, 0.75);
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+    &.active, &:hover, &:focus {
+      color: $white;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+    li {
+      padding-top: $spacer-y * .25;
+      padding-bottom: $spacer-y * .25;
+    }
+  }
+}
+
+.list-two-columns {
+  columns: 2;
+}

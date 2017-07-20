@@ -1,0 +1,11 @@
+#map-canvas {
+  height: 12.5rem;
+  border-top: 3px solid $hr-border-color;
+  border-bottom: 3px solid $hr-border-color;
+  @include media-breakpoint-up(md) {
+    height: 20rem;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 25rem;
+  }
+}

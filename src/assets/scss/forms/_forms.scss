@@ -1,0 +1,13 @@
+.col-form-label, .control-label {
+  color: $black;
+  font-weight: bold;
+}
+form {
+  .required {
+    color: $red;
+  }
+}
+
+textarea.extended {
+  height: 8.5rem;
+}
