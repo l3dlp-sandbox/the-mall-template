@@ -1,7 +1,13 @@
-About this template
-===================
+## Getting started
 
-Coming soon
+1. Clone this repository or download the latest zip file
+2. Open a terminal in the project directory
+3. Run npm install
+4. Start a development server with gulp watch
+
+## Support / Feature requests / Suggestions
+
+Are you missing some feature / page or are you looking for support? Feel free to open an issue here on Github.
 
 ## Copyright and License
 
