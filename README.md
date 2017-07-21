@@ -1,5 +1,7 @@
 ## Getting started
 
+See a live preview at [the demo site](http://the-mall-template.pascal-poredda.de/)
+
 1. Clone this repository or download the latest zip file
 2. Open a terminal in the project directory
 3. Run npm install
